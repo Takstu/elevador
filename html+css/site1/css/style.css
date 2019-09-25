@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+
+}
+
+h1{
+    margin-bottom: 0;
+    color: rgba(72, 182, 155, 1);
+}
+
+h2{
+    margin-top: 0;
+    background-color: rgba(72, 182, 155, 1);
+    padding: 10px;
+    color: white;
+}
+
+h3{
+    color: orange;
+}
+
+a{
+    color: red;
+}
+
+input{
+    background: rgba(128, 128, 128, 0.6);
+    margin: 0;
+    padding: 10px;
+    display: block;
+    margin-top: 5px;
+}
+
+#nome{
+    background-color: rgba(128, 128, 128, 0.9);
+    padding: 5px;
+    margin: 0;
+}
