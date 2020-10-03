@@ -1,0 +1,10 @@
+{
+    "autoload" : {
+        "psr-4" : {
+            "AtividadeFinal\\" : "src/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9"
+    }
+}
