@@ -1,0 +1,38 @@
+<?php
+$this->headTitle('Author`s Posts');
+
+$this->mainMenu()->setActiveItemId('author');
+
+$this->pageBreadcrumbs()->setItems([
+    'Author' => $this->url('author'),
+    'Authors Posts' => $this->url('author', ['action' => 'index'])
+]);
+
+echo $this->flashMessenger()->render();
+?>
+
+<h1>Authors Posts</h1>
+
+<table class="table table-striped">
+
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Subtitle</th>
+        <th>Date Created</th>
+    </tr>
+
+    <?php foreach ($authors_posts as $post): ?>
+
+        <tr>
+            <td><?= $this->escapeHtml($post->getId()); ?></td>
+            <td>
+                <?= $this->escapeHtml($post->getTitle()); ?>
+            </td>
+            <td><?= $this->escapeHtml($post->getSubtitle()); ?></td>
+            <td><?= $post->getDateCreated()->format('d/m/Y H:i'); ?></td>
+        </tr>
+
+    <?php endforeach; ?>
+
+</table>
